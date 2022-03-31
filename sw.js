@@ -2,10 +2,9 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open('video-store').then(function(cache) {
             return cache.addAll([
-                '/indexeddb/',
-                '/indexeddb/index.html',
-                '/indexeddb/videoindex.css',
-                '/indexeddb/videoindex.js'
+                'index.html',
+                'videoindex.css',
+                'videoindex.js'
             ]);
         })
     );
