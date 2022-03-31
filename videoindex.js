@@ -129,6 +129,6 @@ request.addEventListener('upgradeneeded', e => {
 // Register service worker to control making site work offline
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('sw.js')
+    .register('/indexeddb/sw.js')
     .then(() => console.log('Service worker Registered'));
 }
